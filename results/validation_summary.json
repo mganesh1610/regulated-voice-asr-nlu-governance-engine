@@ -1,0 +1,50 @@
+{
+  "dataset_audit": {
+    "train_sha256": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "test_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "train_utterances": 10003,
+    "test_utterances": 3080,
+    "total_utterances": 13083,
+    "unique_intents": 77,
+    "train_exact_duplicates_flagged": 4,
+    "test_exact_duplicates_flagged": 1,
+    "mean_token_count": 11.71,
+    "label_entropy_bits": 6.2169,
+    "normalized_label_balance_ratio": 0.992
+  },
+  "asr_and_turntaking_metrics": {
+    "total_reference_words": 33732,
+    "raw_asr_word_errors": 1905,
+    "rescored_asr_word_errors": 101,
+    "raw_asr_wer_pct": 5.65,
+    "rescored_asr_wer_pct": 0.3,
+    "relative_wer_reduction_pct": 94.7,
+    "baseline_turn_latency_p50_ms": 780.7,
+    "optimized_turn_latency_p50_ms": 434.6,
+    "baseline_turn_latency_p95_ms": 848.3,
+    "optimized_turn_latency_p95_ms": 466.0,
+    "p95_turn_latency_reduction_pct": 45.07
+  },
+  "nlu_intent_classification_metrics": {
+    "Deduplicated_Train_Samples": 9999,
+    "Holdout_Test_Samples": 3080,
+    "Clean_Test_Top1_Accuracy_Pct": 88.47,
+    "Clean_Test_Top3_Accuracy_Pct": 96.2,
+    "Clean_Test_Macro_F1_Pct": 88.45,
+    "Raw_ASR_Test_Top1_Accuracy_Pct": 82.44,
+    "Raw_ASR_Test_Macro_F1_Pct": 82.37,
+    "Rescored_ASR_Test_Top1_Accuracy_Pct": 88.47,
+    "Rescored_ASR_Test_Macro_F1_Pct": 88.45,
+    "ASR_Rescoring_Accuracy_Recovery_PP": 6.04
+  },
+  "llm_structured_output_and_governance": {
+    "evaluated_call_summaries": 3080,
+    "schema_valid_json_outputs": 3080,
+    "schema_compliance_rate_pct": 100.0,
+    "grounded_summaries_verified": 3080,
+    "auto_tool_routed_calls": 1365,
+    "live_agent_escalated_calls": 1715,
+    "escalation_guardrail_rate_pct": 55.68
+  },
+  "sqlite_integrity_check": "ok"
+}

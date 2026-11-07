@@ -1,0 +1,332 @@
+[
+  {
+    "call_id": "test_00000",
+    "predicted_intent": "get_physical_card",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0518,
+    "top_3_candidate_intents": [
+      "get_physical_card",
+      "topping_up_by_card",
+      "card_linking"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "get_physical_card",
+        "utterance_token_count": 6
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'get_physical_card' (0.05 conf) from 6-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "How do I locate my card?",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00001",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.1659,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "balance_not_updated_after_cheque_or_cash_deposit",
+      "request_refund"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "AUTO_EXECUTE_TOOL",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 14
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.17 conf) from 14-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "I still have not received my new card, I ordered over a week ago.",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00002",
+    "predicted_intent": "transfer_not_received_by_recipient",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0378,
+    "top_3_candidate_intents": [
+      "transfer_not_received_by_recipient",
+      "card_arrival",
+      "getting_virtual_card"
+    ],
+    "tool_call": {
+      "service": "wire_and_ach_transfer_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "transfer_not_received_by_recipient",
+        "utterance_token_count": 11
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'transfer_not_received_by_recipient' (0.04 conf) from 11-token transcript; routed to wire_and_ach_transfer_service.",
+    "pii_redacted_transcript": "I ordered a card but it has not arrived. Help please!",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00003",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0537,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "card_delivery_estimate",
+      "card_payment_fee_charged"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 11
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.05 conf) from 11-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "Is there a way to know when my card will arrive?",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00004",
+    "predicted_intent": "transfer_not_received_by_recipient",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0658,
+    "top_3_candidate_intents": [
+      "transfer_not_received_by_recipient",
+      "card_arrival",
+      "lost_or_stolen_card"
+    ],
+    "tool_call": {
+      "service": "wire_and_ach_transfer_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "transfer_not_received_by_recipient",
+        "utterance_token_count": 6
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'transfer_not_received_by_recipient' (0.07 conf) from 6-token transcript; routed to wire_and_ach_transfer_service.",
+    "pii_redacted_transcript": "My card has not arrived yet.",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00005",
+    "predicted_intent": "card_delivery_estimate",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0787,
+    "top_3_candidate_intents": [
+      "card_delivery_estimate",
+      "card_arrival",
+      "order_physical_card"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_delivery_estimate",
+        "utterance_token_count": 6
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_delivery_estimate' (0.08 conf) from 6-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "When will I get my card?",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00006",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.1033,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "lost_or_stolen_card",
+      "card_about_to_expire"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 16
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.10 conf) from 16-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "Do you know if there is a tracking number for the new card you sent me?",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00007",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0481,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "get_physical_card",
+      "declined_card_payment"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 6
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.05 conf) from 6-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "i have not received my card",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00008",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0321,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "pending_cash_withdrawal",
+      "pending_top_up"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 5
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.03 conf) from 5-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "still waiting on that card",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00009",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0554,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "why_verify_identity",
+      "age_limit"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 14
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.06 conf) from 14-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "Is it normal to have to wait over a week for my new card?",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00010",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.1153,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "verify_source_of_funds",
+      "topping_up_by_card"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 6
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.12 conf) from 6-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "How do I track my card?",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00011",
+    "predicted_intent": "card_delivery_estimate",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0797,
+    "top_3_candidate_intents": [
+      "card_delivery_estimate",
+      "order_physical_card",
+      "card_arrival"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_delivery_estimate",
+        "utterance_token_count": 7
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_delivery_estimate' (0.08 conf) from 7-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "How long does a card delivery take?",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00012",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.0783,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "lost_or_stolen_phone",
+      "card_swallowed"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 13
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.08 conf) from 13-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "I still don't have my card after 2 weeks.  What should I do?",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00013",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.08,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "activate_my_card",
+      "pending_top_up"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "ESCALATE_LIVE_AGENT",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 6
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.08 conf) from 6-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "still waiting on my new card",
+    "hallucination_check_passed": true
+  },
+  {
+    "call_id": "test_00014",
+    "predicted_intent": "card_arrival",
+    "ground_truth_intent": "card_arrival",
+    "confidence": 0.1447,
+    "top_3_candidate_intents": [
+      "card_arrival",
+      "why_verify_identity",
+      "extra_charge_on_statement"
+    ],
+    "tool_call": {
+      "service": "card_lifecycle_service",
+      "action": "AUTO_EXECUTE_TOOL",
+      "arguments": {
+        "intent_slug": "card_arrival",
+        "utterance_token_count": 13
+      }
+    },
+    "structured_call_summary": "Customer inquiry classified as 'card_arrival' (0.14 conf) from 13-token transcript; routed to card_lifecycle_service.",
+    "pii_redacted_transcript": "I am still waiting for my card after 1 week.  Is this ok?",
+    "hallucination_check_passed": true
+  }
+]
